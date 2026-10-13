@@ -1,6 +1,8 @@
 % Storm Events 2018: hurricane damage analysis (NOAA Storm Events Database)
 % Plain-text export of storm_events_2018.mlx so the code is readable on GitHub.
 % Place StormEvents_2018.csv in a data/ folder next to this script before running.
+% Note: NOAA records most hurricane events by forecast zone, without coordinates,
+% so the location plots in Sections 9-10 show only events that carry lat/lon.
 
 %% Section 1
 % Set up the Import Options and import the data
@@ -78,8 +80,8 @@ ylabel("Cost in dollars")
 
 %% Section 8
 % Filter hurricane events in North Carolina and Georgia (2018)
-nc_events_harvey = events(strcmp(events.State, 'North Carolina') & events.Event_Type == "Hurricane", :);
-ga_events_harvey = events(strcmp(events.State, 'Georgia') & events.Event_Type == "Hurricane", :);
+nc_events_harvey = events(strcmp(events.State, 'NORTH CAROLINA') & events.Event_Type == "Hurricane", :);
+ga_events_harvey = events(strcmp(events.State, 'GEORGIA') & events.Event_Type == "Hurricane", :);
 
 % Count the occurrences of each event type in North Carolina and Georgia
 nc_event_counts = countcats(categorical(nc_events_harvey.Event_Type));
@@ -100,8 +102,8 @@ legend('North Carolina', 'Georgia', 'Location', 'northwest');
 
 %% Section 9
 % Filter data for the two states
-state1_events = events(strcmp(events.State, 'North Carolina'), :);
-state2_events = events(strcmp(events.State, 'Georgia'), :);
+state1_events = events(strcmp(events.State, 'NORTH CAROLINA'), :);
+state2_events = events(strcmp(events.State, 'GEORGIA'), :);
 
 % Plot event locations on a map
 figure;
@@ -117,39 +119,15 @@ scatter(state2_events.Begin_Lon, state2_events.Begin_Lat, 'filled', 'Marker', 's
 xlabel('Longitude');
 ylabel('Latitude');
 title('Event Locations in Two States');
-legend('North carolina', 'Georgia');
+legend('North Carolina', 'Georgia');
 grid on;
 
 hold off;
 
 %% Section 10
 % Filter data for the two states
-state1_events = events(strcmp(events.State, 'State1'), :);
-state2_events = events(strcmp(events.State, 'State2'), :);
-
-% Plot event locations on a map
-figure;
-hold on;
-
-% Plot events for State 1
-scatter(state1_events.Begin_Lon, state1_events.Begin_Lat, 100, 'b', 'filled', 'o');
-
-% Plot events for State 2
-scatter(state2_events.Begin_Lon, state2_events.Begin_Lat, 100, 'r', 'filled', 's');
-
-% Customize plot
-xlabel('Longitude');
-ylabel('Latitude');
-title('Event Locations in Two States');
-legend('State 1', 'State 2');
-grid on;
-
-hold off;
-
-%% Section 11
-% Filter data for the two states
-state1_events = events(strcmp(events.State, 'North Carolina'), :);
-state2_events = events(strcmp(events.State, 'Georgia'), :);
+state1_events = events(strcmp(events.State, 'NORTH CAROLINA'), :);
+state2_events = events(strcmp(events.State, 'GEORGIA'), :);
 
 % Create a new figure with a map of the United States
 figure;

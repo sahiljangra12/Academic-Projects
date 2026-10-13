@@ -11,7 +11,4 @@ A social impact assessment of the Rajiv Gandhi Scheme for Empowerment of Adolesc
 
 ## Files
 
-| File | Description |
-|------|-------------|
-| `sabla-social-impact-assessment.pdf` | The report, viewable in the browser |
-| `sabla-social-impact-assessment.docx` | Original Word version |
+`sabla-social-impact-assessment.pdf`: the full report
