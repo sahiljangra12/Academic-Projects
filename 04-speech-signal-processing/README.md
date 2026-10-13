@@ -18,7 +18,7 @@ A notebook that transcribes a short speech recording in English and Hindi, then 
 
 ## Running it
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sahiljangra12/Academic-Projects/blob/main/06-speech-signal-processing/speech_signal_processing.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sahiljangra12/Academic-Projects/blob/main/04-speech-signal-processing/speech_signal_processing.ipynb)
 
 Run the setup cell, upload any short WAV recording, and set `AUDIO_FILE` to its name. The original recording isn't included.
 

@@ -1,0 +1,37 @@
+name: Notebooks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: README links resolve
+        run: python scripts/check_links.py
+
+      - name: Notebooks run end to end
+        # Notebooks that need external data (NSS Stata files, a speech recording) are skipped.
+        run: |
+          for nb in \
+            01-mumbai-aqi-forecasting/notebooks/Mumbai_AQI_Predictive_Modelling.ipynb \
+            02-people-analytics/telco-india-recruitment/recruitment_logistic_regression.ipynb \
+            02-people-analytics/abl-engagement-survey/engagement_factor_analysis.ipynb \
+            03-health-survey-analytics/notebooks/hces_substance_health_spending.ipynb
+          do
+            echo "::group::$nb"
+            jupyter nbconvert --to notebook --execute "$nb" --output-dir /tmp/executed
+            echo "::endgroup::"
+          done
