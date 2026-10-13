@@ -34,7 +34,7 @@ A principal component analysis of 220 employees' Likert-scale responses. Six com
 | Organisational commitment and recognition | 14 | 0.95 | 3.81 |
 | Communication and collaboration | 6 | 0.81 | 3.52 |
 | Growth and development | 2 | 0.37 | 3.31 |
-| Work conditions and autonomy | 2 | 0.61 | 3.07 |
+| Work conditions and autonomy | 2 | 0.60 | 3.07 |
 | Work-life balance | 2 | 0.61 | **2.93** |
 
 Work-life balance is the weakest area and the first priority. The growth-and-development scale is unreliable (α = 0.37), so those survey items need redesigning before the next round.

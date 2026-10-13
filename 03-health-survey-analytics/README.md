@@ -36,7 +36,7 @@ Do households that spend on tobacco or intoxicants spend less on health care, wh
 ![Health spending by consumption quintile](assets/health_spending_by_quintile.png)
 
 **Findings:**
-- **Substance spending is widespread.** 62% of households spend on tobacco and 49% on intoxicants. Tobacco use is more common in rural households (66%) than urban ones (52%), and it falls steadily with income, from 71% in the poorest fifth to 49% in the richest.
+- **Substance spending is widespread.** 62% of households spend on tobacco and 49% on intoxicants. Tobacco use is more common in rural households (66%) than urban ones (52%), and it falls steadily with income, from 70% in the poorest fifth to 49% in the richest.
 - **The health-spending gap comes from the richest households.** Tobacco households spend less on health care on average (₹1,165 vs ₹1,448 a month). But in the four poorer quintiles they spend about the same or *more*; the overall gap comes entirely from the richest fifth.
 - **Substance spending outweighs health spending for poorer users.** In the poorest fifth of user households, monthly spending on tobacco and intoxicants is about 1.8 times their health spending. In the richest fifth it falls below 1.
 
