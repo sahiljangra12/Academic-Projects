@@ -77,7 +77,7 @@ title(stat + " of Hurricane cost by month")
 ylabel("Cost in dollars")
 
 %% Section 8
-% Filter data for events related to Hurricane Harvey in North Carolina and Georgia
+% Filter hurricane events in North Carolina and Georgia (2018)
 nc_events_harvey = events(strcmp(events.State, 'North Carolina') & events.Event_Type == "Hurricane", :);
 ga_events_harvey = events(strcmp(events.State, 'Georgia') & events.Event_Type == "Hurricane", :);
 
@@ -95,7 +95,7 @@ xticks(1:length(event_types));
 xticklabels(event_types);
 xlabel('Event Type');
 ylabel('Number of Occurrences');
-title('Number of Occurrences for Event Types Related to Hurricane Harvey');
+title('Number of Occurrences for Event Types in Hurricane Events, 2018');
 legend('North Carolina', 'Georgia', 'Location', 'northwest');
 
 %% Section 9
