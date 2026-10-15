@@ -1,8 +1,13 @@
-# Academic Projects
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-academic-dark.svg">
+  <img src="assets/header-academic-light.svg" alt="Academic Projects: machine learning, survey statistics, dashboards and optimisation" width="100%">
+</picture>
 
 [![Notebooks](https://github.com/sahiljangra12/Academic-Projects/actions/workflows/ci.yml/badge.svg)](https://github.com/sahiljangra12/Academic-Projects/actions/workflows/ci.yml)
 
-Coursework from my BSc in Analytics and Sustainability Studies at the Tata Institute of Social Sciences, Mumbai: machine learning, survey statistics, people analytics, SDG dashboards and optimisation. Every project folder has its own README covering the question, the method and the results.
+Twelve projects from my BSc in Analytics and Sustainability Studies at the Tata Institute of Social Sciences, Mumbai. Each folder has its own README covering the question, the method and the results.
+
+**Jump to:** [Machine learning and statistics](#machine-learning-and-statistics) · [Dashboards](#dashboards) · [Optimisation and other analysis](#optimisation-and-other-analysis) · [Reports](#reports)
 
 ## Machine learning and statistics
 
@@ -120,4 +125,4 @@ jupyter notebook
 On every push, continuous integration re-runs the notebooks that use bundled data (air quality, people analytics and the HCES analysis) and checks that every link in these READMEs resolves.
 
 **Related:** the [undergraduate thesis](https://github.com/sahiljangra12/Thesis) analyses planetary pressure and development across 182 countries.<br>
-**Contact:** Sahil · MSE Data Science, Johns Hopkins University · sfnu1@jh.edu
+**Contact:** Sahil · MSE Data Science, Johns Hopkins University · [sfnu1@jh.edu](mailto:sfnu1@jh.edu) · [sahiljangra12 on GitHub](https://github.com/sahiljangra12)
