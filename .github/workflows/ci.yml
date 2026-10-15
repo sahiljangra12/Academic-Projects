@@ -29,7 +29,8 @@ jobs:
             01-mumbai-aqi-forecasting/notebooks/Mumbai_AQI_Predictive_Modelling.ipynb \
             02-people-analytics/telco-india-recruitment/recruitment_logistic_regression.ipynb \
             02-people-analytics/abl-engagement-survey/engagement_factor_analysis.ipynb \
-            03-health-survey-analytics/notebooks/hces_substance_health_spending.ipynb
+            03-health-survey-analytics/notebooks/hces_substance_health_spending.ipynb \
+            13-neural-spike-sorting/notebooks/spike_sorting.ipynb
           do
             echo "::group::$nb"
             jupyter nbconvert --to notebook --execute "$nb" --output-dir /tmp/executed

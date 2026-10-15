@@ -5,7 +5,7 @@
 
 [![Notebooks](https://github.com/sahiljangra12/Academic-Projects/actions/workflows/ci.yml/badge.svg)](https://github.com/sahiljangra12/Academic-Projects/actions/workflows/ci.yml)
 
-Twelve projects from my BSc in Analytics and Sustainability Studies at the Tata Institute of Social Sciences, Mumbai. Each folder has its own README covering the question, the method and the results.
+Thirteen projects from my BSc in Analytics and Sustainability Studies at the Tata Institute of Social Sciences, Mumbai, and my MSE in Data Science at Johns Hopkins. Each folder has its own README covering the question, the method and the results.
 
 **Jump to:** [Machine learning and statistics](#machine-learning-and-statistics) · [Dashboards](#dashboards) · [Optimisation and other analysis](#optimisation-and-other-analysis) · [Reports](#reports)
 
@@ -14,31 +14,40 @@ Twelve projects from my BSc in Analytics and Sustainability Studies at the Tata 
 <table>
 <tr>
 <td width="50%" valign="top">
+<a href="13-neural-spike-sorting"><img src="assets/thumb-spike-sorting.jpg" alt="Sorted neural spikes"></a>
+<h3><a href="13-neural-spike-sorting">Neural Spike Sorting</a></h3>
+Sorts 3,298 unlabelled neural spikes into three putative neurons with PCA and Gaussian mixtures; the split is identical across every resampling test.<br>
+<sub>Python · PCA · Gaussian mixtures · Johns Hopkins</sub>
+</td>
+<td width="50%" valign="top">
 <a href="01-mumbai-aqi-forecasting"><img src="assets/thumb-aqi.jpg" alt="Next-day AQI forecast"></a>
 <h3><a href="01-mumbai-aqi-forecasting">Mumbai Air Quality Forecasting</a></h3>
 Explains, flags and forecasts daily AQI. The next-day model cuts error by 30% compared with "tomorrow = today" and warned a day ahead for 19 of 28 high-pollution days.<br>
 <sub>Python · scikit-learn · time-ordered validation</sub>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 <a href="02-people-analytics"><img src="assets/thumb-people-analytics.jpg" alt="People analytics poster"></a>
 <h3><a href="02-people-analytics">People Analytics Case Studies</a></h3>
 A cross-validated hiring model that flags bias-risk predictors, factor analysis of a 26-item engagement survey, and an integer-programming hiring plan for a hospital network.<br>
 <sub>Logistic regression · PCA · linear programming</sub>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 <a href="03-health-survey-analytics"><img src="assets/thumb-health-survey.jpg" alt="Health spending by quintile"></a>
 <h3><a href="03-health-survey-analytics">Uttarakhand Health Survey Analytics</a></h3>
 Survey-weighted analysis of government microdata on hospital use, out-of-pocket costs, and whether tobacco spending crowds out health spending.<br>
 <sub>Python · survey weights · NSS / HCES microdata</sub>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 <a href="04-speech-signal-processing"><img src="assets/thumb-speech.jpg" alt="Speech spectrogram"></a>
 <h3><a href="04-speech-signal-processing">Speech Signal Processing</a></h3>
 Speech-to-text in English and Hindi, plus waveform, spectrogram and formant analysis of a recording.<br>
 <sub>Python · librosa · Praat</sub>
 </td>
+<td width="50%" valign="top"></td>
 </tr>
 </table>
 
@@ -122,7 +131,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-On every push, continuous integration re-runs the notebooks that use bundled data (air quality, people analytics and the HCES analysis) and checks that every link in these READMEs resolves.
+On every push, continuous integration re-runs the notebooks that use bundled data (air quality, people analytics, the HCES analysis and spike sorting) and checks that every link in these READMEs resolves.
 
 **Related:** the [undergraduate thesis](https://github.com/sahiljangra12/Thesis) analyses planetary pressure and development across 182 countries.<br>
 **Contact:** Sahil · MSE Data Science, Johns Hopkins University · [sfnu1@jh.edu](mailto:sfnu1@jh.edu) · [sahiljangra12 on GitHub](https://github.com/sahiljangra12)
